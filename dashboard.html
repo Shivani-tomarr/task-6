@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./files/dashboard.css" />
+    <script>
+        function toggleCheckbox(event) {
+            event.preventDefault();
+            var checkboxContainer = event.target.closest(".custom-checkbox");
+            if (checkboxContainer) {
+                checkboxContainer.classList.toggle("checked");
+            }
+            const yellowish=event.target.closest(".default");
+            yellowish.classList.toggle('yellow');
+            console.log(yellowish);
+        }
+    </script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="background--image">
+        <header class="header">
+            <img class="head-logo" src="../Assets/icons/logo_header.svg" alt="">
+            <div class="bottom menu">
+                <p id="dash">DASHBOARD</p>
+            </div>
+            <ul class="menu-items menu">
+                <li><a href="#">CONTENT</a>
+                  <ul class="submenu">
+                      <li><a href="#">COURSE CATALOG</a></li>
+                  </ul>
+              </li>
+                <li><a href="#">USERS</a>
+                  <ul class="submenu">
+                      <li><a href="#">SHOW USERS</a></li>
+                  </ul>
+              </li>
+                <li><a href="#">REPORTS</a>
+                  <ul class="submenu">
+                      <li><a href="#">VIEW REPORTS</a></li>
+                  </ul>
+              </li>
+                <li><a href="#">ADMIN</a>
+                  <ul class="submenu">
+                      <li><a href="#">VIEW DETAILS</a></li>
+                  </ul>
+              </li>
+              </ul>
+            
+            <div class="menu-items distt not" id="alert">
+                <img  style="height: 25px;" src="../Assets/icons/alerts.svg" alt="">
+                <span id="alertNum" class="badge not">2</span>
+                <div class="alertt" >
+                    <div class="icon-content">
+                        <div class="default yellow">
+                            <div class="heading">
+                                <p>License for Introduction to Algebra has been assigned to your school</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="alertDate">
+                                <p>15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                
+                
+                        </div>
+                        <div class="yellow default ">
+                            <div class="heading">
+                                <p>Lesson 3 Practice Worksheet overdue for Amy Santiago</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="subCourse">
+                                <p class="lessonCourse">Course:</p>
+                                <p class="advSub">Advance Mathematics</p>
+                            </div>
+                            <div class="alertDate">
+                                <p>15-Sep-2018 at 05:21 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="heading">
+                                <p>23 New Students created</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="alertDate">
+                                <p>14-Sep-2018 at 01:21 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="heading">
+                                <p>15 submissions ready for evaluation</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="subCourse">
+                                <p class="lessonCourse">Class:</p>
+                                <p class="advSub">Basics of Algebra</p>
+                            </div>
+                            <div class="alertDate">
+                                <p>13-Sep-2018 at 01:15 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="heading">
+                                <p>License for Basics Concepts in Geometry has been assigned to your school</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="alertDate">
+                                <p>15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                        </div>
+                
+                
+                
+                </div>
+                
+                    <div class="alert-btn">
+                        <button class="ann-btn">SHOW ALL</button>
+                    </div>
+                </div>
+            </div>
+                
+            
+                
+
+            <div class="menu-items distt not" id="announcement">
+                <img  style="height: 25px;" src="../Assets/icons/announcements.svg" alt="">
+                <span id="announceNum" class="badge1 not">1</span>
+                <div class="announce" >
+                    <div class="icon-content">
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Wilson Kumar</p>
+                            </div>
+                            <div class="heading">
+                                <p>No Classes will be held on 21st Nov</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="annDate">
+                                <p>&#128206 2 files are attached</p>
+                                <p>15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                
+                
+                        </div>
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Samson White</p>
+                            </div>
+                            <div class="heading">
+                                <p>Guest lecture on Gemoetry on 20 September</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="annDate">
+                                <p>&#128206 2 files are attached</p>
+                                <p>15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                
+                
+                        </div>
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Wilson Kumar</p>
+                            </div>
+                            <div class="heading">
+                                <p>Additional course materials available on request</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="subCourse">
+                                <p class="lessonCourse">Course:</p>
+                                <p class="advSub">Mathematics 101</p>
+                            </div>
+                            <div class="alertDate">
+                                <p>14-Sep-2018 at 01:21 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Wilson Kumar</p>
+                            </div>
+                            <div class="heading">
+                                <p>No Classes will be held on 25th Dec</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="alertDate">
+                                <p>13-Sep-2018 at 01:15 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Wilson Kumar</p>
+                            </div>
+                            <div class="heading">
+                                <p>Additional course materials available on request</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="subCourse">
+                                <p class="lessonCourse">Course:</p>
+                                <p class="advSub">Mathematics 101</p>
+                            </div>
+                            <div class="alertDate">
+                                <p>14-Sep-2018 at 01:21 pm</p>
+                            </div>
+                        </div>
+                        <div class="default yellow">
+                            <div class="subCourse">
+                                <p class="lessonCourse">PA:</p>
+                                <p class="advSub">Samson White</p>
+                            </div>
+                            <div class="heading">
+                                <p>Guest lecture on Gemoetry on 20 September</p>
+                                <label class="custom-checkbox" onclick="toggleCheckbox(event)">
+                                    <input type="checkbox">
+                                    <span class="checkmark">
+                                      <span class="icon-minus">-</span>
+                                      <span class="icon-check">&#10004;</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="annDate">
+                                <p>&#128206 2 files are attached</p>
+                                <p>15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                
+                
+                        </div>
+                    </div>
+                    <div class="announce-btn">
+                        <button class="ann-btn" id="show">SHOW ALL</button>
+                        <div class="seperator"></div>
+                        <button class="ann-btn" id="create">CREATE NEW</button>
+                    </div>
+                
+                </div>
+            </div>
+        
+            <img class="menu-items distt profile  not"  src="../Assets/images/profile.jfif" alt="">
+            <span class="badge2 not">T</span>
+
+            <div id="ham">
+                <div class="menu-toggle">
+                    <div class="hamburger">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  
+                  <nav class="menuu">
+                    <ul class="menu-items">
+                      <li><a href="#">DASHBOARD</a></li>
+                      
+                        <li class="drop"><a href="#">CONTENT</a> <img src="../Assets/icons/arrow-down.svg" alt="">
+                            <ul class="submenu">
+                                <li ><a href="#">COURSE CATALOG</a>  </li>
+                            </ul>
+                        </li>
+
+                      <li class="drop"><a href="#">USERS</a> <img src="../Assets/icons/arrow-down.svg" alt="">
+                        <ul class="submenu">
+                            <li><a href="#">SHOW USERS</a></li>
+                        </ul>
+                    </li>
+                      <li class="drop"><a href="#">REPORTS</a> <img src="../Assets/icons/arrow-down.svg" alt="">
+                        <ul class="submenu">
+                            <li><a href="#">VIEW REPORTS</a></li>
+                        </ul>
+                    </li>
+                      <li class="drop"><a href="#">ADMIN</a> <img src="../Assets/icons/arrow-down.svg" alt="">
+                        <ul class="submenu">
+                            <li><a href="#">VIEW DETAILS</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                  </nav> 
+            </div>   
+        </header>
+    </div>
+
+    
+    
+
+    <main class="main">
+        <div class="container">
+            <div class="open">
+                <div class="open1">
+                    <img src="../Assets/icons/courses.svg" alt="">
+                    <p class="courseNumber">4</p>
+                    <p class="course">Courses</p>
+                </div>
+                <div class="open2">
+                    <img src="../Assets/icons/classes.svg" alt="">
+                    <p class="courseNumber">4</p>
+                    <p class="course">Classes</p>
+                </div>
+            </div>
+            <div class="filter">
+                <p class="blur-txt">Showing 4 of 4 courses</p>
+                <p class="sort blur-txt">Sort By:</p>
+                <div class="course-arrow">
+                    <div>
+                        <p class="course-name">Course Name</p>
+                    </div>
+                    <div>
+                        <img src="../Assets/icons/arrow-down.svg" alt="">
+                    </div>
+                </div>
+                <img class="upArrow" style="height: 20px;" src="../Assets/icons/sort.svg" alt="">
+            </div>
+            <div class="c1" id="container">   
+            </div>
+        </div>
+        <div class="content-2">
+            <h4>About</h4>
+            <div class="vl"></div>
+            <h4>Contact Us</h4>
+        </div>
+    </main>
+
+    <Footer class="footer">
+        <img class="footer-logo" src="../Assets/icons/logo_footer.svg" alt="">
+        <div class="vl"></div>
+        <p class="copyright">Copyright &copy 2020-2021 <strong>Zeus Systems Pvt. Ltd. </strong> All rights reserved.</p>
+    </Footer>
+
+    <script src="dashboards.js"></script>  
+</body>
+</html>

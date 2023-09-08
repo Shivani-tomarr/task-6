@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./files/index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img src="icons/logo used in header.svg" alt="" />
+    </div>
+    <div class="article">
+      <div class="container">
+        <div class="form-header">
+          <div><img  class="header-image" src="icons/back.svg" /></div>
+          <div>Log In with Quamtum</div>
+        </div>
+        <form class="login" id="loginform">
+
+
+          <div class="select">
+            <input type="radio" name="Area" id="District" />
+            <label for="District" style="margin-right: 32px;">District</label>
+            <input type="radio" name="Area" id="Independent-school" />
+            <label for="Independent-school">Independent School</label>
+          </div>
+          <div class="menu">
+            <label for="State">State*</label>
+            <select class="drop" name="Alabama" id="Alabama">
+              <option value="Alabama">Alabama</option>
+            </select>
+          </div>
+          <div class="District">
+            <label  for="District">District</label>
+            <select class="drop" name="Alabama" id="Alabama-School">
+              <option value="Alabama">Alabama School District</option>
+            </select>
+          </div>
+          <div class="Username">
+            <input
+              class="login-input"
+              type="text"
+              name="Username"
+              id="Username"
+              placeholder="Username/Email ID*"
+              required
+            />
+          </div>
+
+          <p>FORGOT USERNAME ?</p>
+
+          <div class="password">
+            <input
+              class="login-input"
+              type="password"
+              name="Password"
+              id="Password"
+              placeholder="Password*"
+            
+
+            />
+
+            <img class="preview" src="icons/preview.svg" alt="">
+
+          </div>
+          <p>FORGOT PASSWORD ?</p>
+          <div class="Remember">
+            <input type="checkbox" name="Remember-me" id="Remember-me" />
+            <label for="Remember">Remember Me</label>
+          </div>
+
+          <div class="btn">
+            <button class="login-btn" type="submit">LOG IN</button>
+          </div>
+        </form>
+      </div>
+
+      
+    </div>
+    <div class="totalfooter">
+      <p class="msg">About <span></span> Contact Us</p>
+      <div class="footer">
+        <img src="icons/logo used in footer.svg" />
+        <span></span>
+        <p class="foot">
+          Copyright &copy; 2020-2021 <strong>Zeus Systems Pvt. Ltd.</strong> All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
